@@ -1,0 +1,10 @@
+.itemMobile {
+  display: none;
+  padding: 2rem 2rem 0;
+  @media (max-width: 767px) {
+    display: block;
+  }
+  .btn-inner:hover {
+    color: white;
+  }
+}

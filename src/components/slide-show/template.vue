@@ -8,7 +8,23 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="../image/group-18.jpg" alt="First slide">
+          <img class="d-block w-100" src="../../assets/group-18.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block mr-auto ml-auto blockCenterdiv">
+            <h2>Lorem Ipsum is simply</h2>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
+              1500s,
+              when an unknown printer took a galley of type and scrambled it to make
+              a
+              type specimen book. It has survived not only five centuries, but also
+              the
+              leap into electronic typesetting, remaining essentially unchanged.</p>
+            <a href="#" class="btn">
+              <span class="btn-inner">Contact Us</span>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../../assets/group-18.jpg" alt="First slide">
           <div class="carousel-caption d-none d-md-block mr-auto ml-auto blockCenterdiv">
             <h2>Lorem Ipsum is simply</h2>
             <p>Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -33,9 +49,22 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <panel-show-mobile/>
   </div>
 </template>
-<script src="../navigation-bar/component.js"></script>
+<script>
+import PanelShowMobile from '../panel-show-moble/template.vue'
+
+export default {
+  name: 'slideShow',
+  components: { PanelShowMobile },
+  data () {
+    return {
+      panelText: 'true'
+    }
+  }
+}
+</script>
 <style lang="sass" scoped>
-  @import '../navigation-bar/style.scss'
+  @import '../slide-show/style.scss'
 </style>
