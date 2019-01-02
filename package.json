@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "bootstrap-vue": "^2.0.0-rc.11",
+    "gsap": "^2.0.2",
     "node-sass": "^4.11.0",
+    "owl.carousel": "^2.3.4",
     "vue": "^2.5.17"
   },
   "devDependencies": {
@@ -26,7 +28,11 @@
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "jquery": true
     },
     "extends": [
       "plugin:vue/essential",
