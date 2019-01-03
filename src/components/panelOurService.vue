@@ -1,7 +1,7 @@
 <template>
   <div class="container panelServies">
-    <header-component headerLabel="Our Service" class="colorSFour"/>
-    <div class="row align-items-center">
+    <header-component headerLabel="Our Service" class="colorSFour pt-3"/>
+    <div class="row align-items-center pb-4">
       <div class="col-4">
         <img src="../assets/artboard-1-copy.png" alt="" class="img-fluid"/>
         <h3>Import</h3>
@@ -38,4 +38,9 @@ export default {
     }
   }
 
+  @media (max-width: 479px) {
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
 </style>

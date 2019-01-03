@@ -2,7 +2,7 @@
   <div class="navigationBar">
     <div class="container">
       <div class="row">
-        <nav  v-bind:class="[activeClass, errorClass]" id="navbar">
+        <nav v-bind:class="[activeClass, optionClass]" id="navbar">
           <a href="/" class="navbar-brand"><img src="../assets/artboard-2-copy.png"></a>
           <span class="ml-auto imgSearchMobile p-3">
                             <img src="../assets/search.svg" alt="" class="img-fluid"></span>
@@ -74,52 +74,48 @@ export default {
   name: 'navigationBar',
   data () {
     return {
-      activeClass: 'navbar navbar-expand-lg navbar-light w-100 pl-0'
+      activeClass: 'navbar navbar-expand-lg navbar-light w-100 pl-0 bg-white',
+      optionClass: ''
     }
+  },
+  mounted () {
+    var navbar = document.getElementById('navbar')
+    var sticky = navbar.offsetTop
+    window.onscroll = function () {
+      stickNavBar()
+    }
+    function stickNavBar () {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add('fixed-top')
+      } else {
+        navbar.classList.remove('fixed-top')
+      }
+    }
+
+    $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+      if (!$(this).next().hasClass('show')) {
+        $(this).parents('.dropdown-menu').first().find('.show').removeClass('show')
+      }
+      var $subMenu = $(this).next('.dropdown-menu')
+      $subMenu.toggleClass('show')
+
+      $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+        $('.dropdown-submenu .show').removeClass('show')
+      })
+      return false
+    })
+
+    $(document).ready(function () {
+      $(document).click(function (event) {
+        var clickover = $(event.target)
+        var _opened = $('.navbar-collapse').hasClass('show')
+        if (_opened === true && !clickover.hasClass('navbar-toggler')) {
+          $('.navbar-toggler').click()
+        }
+      })
+    })
   }
 }
-
-var navbar = document.getElementsByTagName('nav')
-console.log(navbar)
-var sticky = navbar.offsetTop
-
-window.onscroll = function () {
-  stickNavBar()
-}
-
-function stickNavBar () {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add('fixed-top')
-    navbar.classList.add('bg-white')
-  } else {
-    navbar.classList.remove('fixed-top')
-    navbar.classList.remove('bg-white')
-  }
-};
-
-$('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
-  if (!$(this).next().hasClass('show')) {
-    $(this).parents('.dropdown-menu').first().find('.show').removeClass('show')
-  }
-  var $subMenu = $(this).next('.dropdown-menu')
-  $subMenu.toggleClass('show')
-
-  $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
-    $('.dropdown-submenu .show').removeClass('show')
-  })
-  return false
-})
-
-$(document).ready(function () {
-  $(document).click(function (event) {
-    var clickover = $(event.target)
-    var _opened = $('.navbar-collapse').hasClass('show')
-    if (_opened === true && !clickover.hasClass('navbar-toggler')) {
-      $('.navbar-toggler').click()
-    }
-  })
-})
-
 </script>
 
 <style scoped lang="scss">
