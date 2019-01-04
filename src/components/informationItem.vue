@@ -43,8 +43,8 @@ export default {
         .nav-link {
           padding: .5rem;
         }
-        .md-last {
-          border-right: none;
+        p {
+          border-right : none;
         }
       }
       .last {
