@@ -3,8 +3,7 @@
     <div class="panelContent">
       <div class="container-fluid p-0">
         <section class="no-gutter align-items-center contentNormal">
-          <div class="text-center d-flex align-items-center">
-            <img class="position-relative w-100" src="../assets/panelContent.png" alt="">
+          <div class="text-center d-flex align-items-center paral panelImage">
             <div class="position-absolute my-auto content">
               <h1 class="text-white">About Seven Hills Trading LTD Company</h1>
               <p class="text-white">It is a long established fact that a reader will be distracted by the
@@ -38,6 +37,9 @@ export default {
     .panelContent {
       position: relative;
       display: block;
+      .panelImage{
+        background-image: url("../assets/panelContent.png");
+      }
       .content {
         position: absolute;
         visibility: visible;
@@ -80,7 +82,7 @@ export default {
           width: 90%;
         }
       }
-      @media (max-width: 480px) {
+      @media (max-width: 767px) {
         .content {
           display: none;
         }

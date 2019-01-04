@@ -95,10 +95,10 @@ export default {
       hideListItemCategory()
     })
 
-    window.onload = function () {
+    window.onload = () => {
       hideListItemCategory()
     }
-    window.onresize = function () {
+    window.onresize = () => {
       hideListItemCategory()
     }
 

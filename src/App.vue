@@ -36,6 +36,12 @@ export default {
 <style lang="scss">
   @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
 
+  .paral {
+    min-height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
   h1 {
     font-family: Roboto;
     font-size: 2.5rem;
@@ -99,6 +105,15 @@ export default {
       font-size: 2.5rem;
     }
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  a {
+    font-family: Roboto !important;
+  }
 
   .jumbotron {
     background: transparent !important;
@@ -118,6 +133,12 @@ export default {
     h4 {
       font-weight: 300;
     }
+  }
+
+  h2 {
+    font-size: 2.5rem !important;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 
   .blockCenterdiv {

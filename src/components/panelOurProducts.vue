@@ -1,5 +1,5 @@
 <template>
-  <div class="panelExpertise">
+  <div class="panelExpertise paral">
     <header-component headerLabel="Out Products" class="colorSF pt-md-3"/>
     <div class="container p-md-0 pb-3">
       <div class="slideShowProduct">
