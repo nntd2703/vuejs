@@ -19,7 +19,7 @@
 
           <input class="btn" type="submit" value="See More">
         </div>
-        <div class="col-12 col-md-6 d-flex justify-content-center"><img src="../assets/img_founder.png" alt=""></div>
+        <div class="col-12 col-md-6 d-flex justify-content-center"><img src="../../assets/img_founder.png" alt=""></div>
       </div>
     </div>
   </div>

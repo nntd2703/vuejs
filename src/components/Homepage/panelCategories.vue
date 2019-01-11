@@ -1,7 +1,7 @@
 <template>
   <div class="productCategory container-fluid  p-4">
     <div class="headerCategory flex-column p-md-2">
-      <img src="../assets/categoryImg.svg" alt="">
+      <img src="../../assets/categoryImg.svg" alt="">
       <span><h2>Product Categories</h2></span>
     </div>
     <div class="contentCategory d-flex">

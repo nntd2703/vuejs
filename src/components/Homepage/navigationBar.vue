@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row">
         <nav v-bind:class="[activeClass, optionClass]" id="navbar">
-          <a href="/" class="navbar-brand"><img src="../assets/artboard-2-copy.png"></a>
+          <a href="/" class="navbar-brand"><img src="../../assets/artboard-2-copy.png"></a>
           <span class="ml-auto imgSearchMobile p-3">
-                            <img src="../assets/search.svg" alt="" class="img-fluid"></span>
+                            <img src="../../assets/search.svg" alt="" class="img-fluid"></span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                   aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,7 +62,7 @@
             </ul>
           </div>
           <span class="ml-auto imgSearch">
-                            <img src="../assets/search.svg" alt="" class="img-fluid"></span>
+                            <img src="../../assets/search.svg" alt="" class="img-fluid"></span>
         </nav>
       </div>
     </div>

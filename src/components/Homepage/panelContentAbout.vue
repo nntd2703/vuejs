@@ -38,7 +38,7 @@ export default {
       position: relative;
       display: block;
       .panelImage{
-        background-image: url("../assets/panelContent.png");
+        background-image: url("../../assets/panelContent.png");
       }
       .content {
         position: absolute;

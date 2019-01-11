@@ -1,36 +1,14 @@
 <template>
   <div id="app">
-    <nav-top/>
-    <navigation-bar/>
-    <slide-show/>
-    <panel-our-service/>
-    <panel-our-products/>
-    <panel-contact/>
-    <panel-content-about/>
-    <founder-panel/>
-    <panel-categories/>
-    <panel-footer/>
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+    </nav>
+    <router-view/>
   </div>
 </template>
 
 <script>
-
-import NavTop from './components/navTop'
-import NavigationBar from './components/navigationBar'
-import SlideShow from './components/slideShow'
-import PanelOurService from './components/panelOurService'
-import PanelOurProducts from './components/panelOurProducts'
-import PanelContact from './components/panelContact'
-import PanelContentAbout from './components/panelContentAbout'
-import FounderPanel from './components/founderPanel'
-import PanelCategories from './components/panelCategories'
-import PanelFooter from './components/panelFooter'
-
-export default {
-  name: 'app',
-  components: { PanelFooter, PanelCategories, FounderPanel, PanelContentAbout, PanelContact, PanelOurProducts, PanelOurService, SlideShow, NavigationBar, NavTop }
-}
-
 </script>
 
 <style lang="scss">

@@ -3,15 +3,15 @@
     <header-component headerLabel="Our Service" class="colorSFour pt-3"/>
     <div class="row align-items-center pb-4">
       <div class="col-4">
-        <img src="../assets/artboard-1-copy.png" alt="" class="img-fluid"/>
+        <img src="../../assets/artboard-1-copy.png" alt="" class="img-fluid"/>
         <h3>Import</h3>
       </div>
       <div class="col-4">
-        <img src="../assets/export.png" alt="" class="img-fluid"/>
+        <img src="../../assets/export.png" alt="" class="img-fluid"/>
         <h3>Export</h3>
       </div>
       <div class="col-4">
-        <img src="../assets/processing.png" alt="" class="img-fluid"/>
+        <img src="../../assets/processing.png" alt="" class="img-fluid"/>
         <h3>Processing</h3>
       </div>
     </div>

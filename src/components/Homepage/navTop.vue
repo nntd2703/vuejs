@@ -84,12 +84,12 @@ export default {
         content: "EN";
         padding-left: 30px; //background-color: #005c13;
         color: #ffffff;
-        content: url("../assets/en.png");
+        content: url("../../assets/en.png");
       }
       .onoffswitch4-inner:after {
         content: "VN";
         padding-right: 30px; //background-color: #005c13;
-        content: url("../assets/vn.png");
+        content: url("../../assets/vn.png");
         color: #ffffff;
         text-align: right;
       }

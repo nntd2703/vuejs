@@ -6,22 +6,22 @@
         <div class="carousel-wrap pb-2">
           <div class="owl-carousel owl-theme owl-product">
             <div class="item text-center">
-              <img class="position-relative" src="../assets/group-19-copy.png" alt="">
+              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
               <h3 class="position-absolute text-white h3CenterDiv">Agricultural
                 Chemical Products </h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../assets/group-19-copy.png" alt="">
+              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
               <h3 class="position-absolute text-white h3CenterDiv">Agricultural
                 Chemical Products </h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../assets/group-19-copy.png" alt="">
+              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
               <h3 class="position-absolute text-white h3CenterDiv">Agricultural
                 Chemical Products </h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../assets/group-19-copy.png" alt="">
+              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
               <h3 class="position-absolute text-white h3CenterDiv">Agricultural
                 Chemical Products </h3>
             </div>
@@ -30,22 +30,22 @@
         <div class="carousel-wrap pb-5 d-md-block d-none">
           <div class="owl-carousel owl-theme owl-product">
             <div class="item text-center">
-              <img class="position-relative" src="../assets/group-19-copy.png" alt="">
+              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
               <h3 class="position-absolute text-white h3CenterDiv">Agricultural
                 Chemical Products </h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../assets/group-19-copy.png" alt="">
+              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
               <h3 class="position-absolute text-white h3CenterDiv">Agricultural
                 Chemical Products </h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../assets/group-19-copy.png" alt="">
+              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
               <h3 class="position-absolute text-white h3CenterDiv">Agricultural
                 Chemical Products </h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../assets/group-19-copy.png" alt="">
+              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
               <h3 class="position-absolute text-white h3CenterDiv">Agricultural
                 Chemical Products </h3>
             </div>
@@ -95,7 +95,7 @@ export default {
 
 <style scoped lang="scss">
   .panelExpertise {
-    background-image: url("../assets/backgroundProduct.jpg");
+    background-image: url("../../assets/backgroundProduct.jpg");
     .h3CenterDiv {
       right: 16%;
       width: 65%;

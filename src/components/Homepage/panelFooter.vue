@@ -10,12 +10,12 @@
         <div class="col-6 col-lg-8 h-auto detailContent text-center text-md-left">
           <div class="logoicon jumbotron">
             <div class="logo">
-              <img src="../assets/artboard-2-copy.png">
+              <img src="../../assets/artboard-2-copy.png">
             </div>
             <div class="iconSocial">
-              <a href="#"><img src="../assets/group-11.png" alt=""></a>
-              <a href="#"><img src="../assets/group-11.png" alt=""></a>
-              <a href="#"><img src="../assets/group-11.png" alt=""></a>
+              <a href="#"><img src="../../assets/group-11.png" alt=""></a>
+              <a href="#"><img src="../../assets/group-11.png" alt=""></a>
+              <a href="#"><img src="../../assets/group-11.png" alt=""></a>
             </div>
           </div>
           <div class="naviFooter">
@@ -30,13 +30,13 @@
           </div>
           <div class="smallInformation">
             <ul>
-              <li><img src="../assets/callIcon.svg" alt="">
+              <li><img src="../../assets/callIcon.svg" alt="">
                 <p class="companyInformation">sevenhillsltd@gmail.com</p>
               </li>
-              <li><img src="../assets/callIcon.svg" alt="">
+              <li><img src="../../assets/callIcon.svg" alt="">
                 <p class="companyInformation">+84 875 789 287</p>
               </li>
-              <li><img src="../assets/callIcon.svg" alt="">
+              <li><img src="../../assets/callIcon.svg" alt="">
                 <p class="last companyInformation">9 AM - 6 PM</p>
               </li>
             </ul>

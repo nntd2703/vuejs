@@ -1,15 +1,15 @@
 <template>
   <ul class="nav">
     <li class="nav-item d-md-block d-none">
-      <img src="../assets/fill-1.svg" alt="" class="align-middle">
+      <img src="../../assets/fill-1.svg" alt="" class="align-middle">
       <p>sevenhillsltd@gmail.com</p>
     </li>
     <li class="nav-item">
-      <img src="../assets/phoneIcon.svg" alt="" class="align-middle">
+      <img src="../../assets/phoneIcon.svg" alt="" class="align-middle">
       <p><a class="nav-link md-last" href="tel:+84875789287">+84 875 789 28</a></p>
     </li>
     <li class="nav-item d-md-block d-none">
-      <img src="../assets/clockicon.svg" alt="" class="align-middle">
+      <img src="../../assets/clockicon.svg" alt="" class="align-middle">
       <p class="last">9 AM - 6 PM</p>
     </li>
   </ul>

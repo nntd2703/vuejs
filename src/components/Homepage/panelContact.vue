@@ -2,7 +2,7 @@
   <div class="contactPanel">
     <div class="container">
       <div class="row contactForm">
-        <div class="col-12 col-md-6 imageContact"><img src="../assets/contactForm.png"></div>
+        <div class="col-12 col-md-6 imageContact"><img src="../../assets/contactForm.png"></div>
         <div class="col-12 col-md-6 workWithUs">
           <form class="jumbotron">
             <div class="header">
