@@ -8,8 +8,8 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="../../assets/group-18.jpg" alt="First slide">
-          <div class="carousel-caption d-none d-md-block mr-auto ml-auto blockCenterdiv">
+          <img class="d-block w-100 paral" src="../assets/group-18.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block mr-auto ml-auto blockCenterdiv w-50">
             <h2>Lorem Ipsum is simply</h2>
             <p>Lorem Ipsum has been the industry's standard dummy text ever since the
               1500s,
@@ -24,8 +24,8 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="../../assets/group-18.jpg" alt="First slide">
-          <div class="carousel-caption d-none d-md-block mr-auto ml-auto blockCenterdiv">
+          <img class="d-block w-100 paral" src="../assets/group-18.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block mr-auto ml-auto blockCenterdiv w-50">
             <h2>Lorem Ipsum is simply</h2>
             <p>Lorem Ipsum has been the industry's standard dummy text ever since the
               1500s,

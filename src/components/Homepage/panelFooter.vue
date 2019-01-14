@@ -41,9 +41,9 @@
               </li>
             </ul>
           </div>
-          <span class="footer-link icon-hover pl-3">
-                        <a href="https://www.facebook.com/JaunieKASS">© 2018 Design By Trang's Team</a>
-                    </span>
+          <div class="footer-link icon-hover text-center">
+            <a href="https://www.facebook.com/JaunieKASS">© 2018 Design By Trang's Team</a>
+          </div>
         </div>
       </div>
     </div>
