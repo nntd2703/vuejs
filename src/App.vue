@@ -1,16 +1,18 @@
 <template>
-  <div id="app">
-    <!--<nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-    </nav> !-->
-    <router-view/>
-  </div>
+  <component :is="layout">
+    <router-view :layout.sync="layout"/>
+  </component>
 </template>
 
 <script>
+
 export default {
-  name: 'App'
+  name: `App`,
+  data () {
+    return {
+      layout: `div`
+    }
+  }
 }
 </script>
 
@@ -18,7 +20,6 @@ export default {
   @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
 
   .paral {
-    min-height: 400px;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
@@ -76,6 +77,7 @@ export default {
     color: white;
     font-weight: 500;
     @media (max-width: 480px) {
+      margin-top: 1rem;
       padding: .2rem .8rem;
       font-size: .8rem;
     }
@@ -198,6 +200,9 @@ export default {
       padding-top: 2rem;
       @media (max-width: 991px) {
         padding-top: 46px;
+      }
+      @media (max-width: 479px) {
+        padding-top: 0px;
       }
     }
 

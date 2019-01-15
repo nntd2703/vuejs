@@ -38,6 +38,7 @@ export default {
       position: relative;
       display: block;
       .panelImage{
+        min-height: 400px;
         background-image: url("../../assets/panelContent.png");
       }
       .content {

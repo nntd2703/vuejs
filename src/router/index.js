@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomePage from '../components/HomePage.vue'
+
+const HomePage = () => import(`../components/HomePage.vue`)
+const About = () => import(`../components/about.vue`)
 
 Vue.use(Router)
 
@@ -10,6 +12,11 @@ export default new Router({
       path: '/',
       name: 'HomePage',
       component: HomePage
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About
     }
   ]
 })

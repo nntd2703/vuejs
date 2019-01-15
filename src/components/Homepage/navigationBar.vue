@@ -13,7 +13,7 @@
           <div class="collapse navbar-collapse justify-content-center w-100" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <router-link to="/"><a class="nav-link" >Home <span class="sr-only">(current)</span></a></router-link>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" ondblclick="renderOurProduct();"
@@ -50,14 +50,14 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+                <router-link to="/about"><a class="nav-link" href="about.html">About Us</a></router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <router-link to="/about"><a class="nav-link" href="contact.html">Contact</a></router-link>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Meeting Founder</a>
+                <router-link to="/about"><a class="nav-link" href="#">Meeting Founder</a></router-link>
               </li>
             </ul>
           </div>
