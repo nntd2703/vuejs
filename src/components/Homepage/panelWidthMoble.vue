@@ -8,9 +8,6 @@
 
 <script>
 import ButtonComponent from './buttonComponent'
-import 'owl.carousel/dist/assets/owl.carousel.css'
-import 'owl.carousel/dist/assets/owl.theme.default.min.css'
-import 'owl.carousel'
 
 export default {
   name: 'panelWidthMoble',

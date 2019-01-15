@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-      <div class="panelAboutUs paral"></div>
+      <panel-about/>
       <div class="contentAboutUs">
         <div class="aboutUs">
           <div class="col-12 d-flex justify-content-center p-3 p-md-5">
@@ -14,16 +14,16 @@
           <div class="contentDetails">
             <div class="container">
               <div class="row">
-                <div class="col-md-4 col-12  text-center">
-                  <img src="../assets/fdicompany.jpg" class="pb-5 pb-md-4">
+                <div class="col-sm-4 col-12 pt-sm-0 pt-4 text-center item">
+                  <img src="../assets/fdicompany.jpg" class="pb-sm-5 pb-3 pb-md-4">
                   <div class="descriptionForImage ml-auto mr-auto"><p>100% FDI Company</p></div>
                 </div>
-                <div class="col-md-4 col-12  text-center">
-                  <img src="../assets/experiencedStaff.jpg" class="pb-4 pb-md-3">
+                <div class="col-sm-4 col-12 pt-sm-0 pt-4 text-center item">
+                  <img src="../assets/experiencedStaff.jpg" class="pb-sm-5 pb-3 pb-md-4">
                   <div class="descriptionForImage ml-auto mr-auto"><p>Experienced staffs</p></div>
                 </div>
-                <div class="col-md-4 col-12  text-center">
-                  <img src="../assets/overseaMarket.jpg" class="pb-5 pb-md-4">
+                <div class="col-sm-4 col-12 pt-sm-0 pt-4 text-center item">
+                  <img src="../assets/overseaMarket.jpg" class="pb-sm-5 pb-3 pb-md-4">
                   <div class="descriptionForImage ml-auto mr-auto"><p>We connections with oversea markets</p></div>
                 </div>
               </div>
@@ -36,8 +36,10 @@
 
 <script>
 import HomeIndex from '../view/home'
+import PanelAbout from './Homepage/panelAbout'
 export default {
   name: 'about',
+  components: { PanelAbout },
   created () {
     this.$emit(`update:layout`, HomeIndex)
   }
@@ -46,9 +48,6 @@ export default {
 
 <style scoped lang="scss">
   .about {
-    .panelAboutUs {
-      background-image: url("../assets/pannelaboutus.jpg");
-    }
     .contentAboutUs {
       .aboutUs {
         h1 {
@@ -90,12 +89,12 @@ export default {
             width: 100px !important;
           }
           .descriptionForImage {
-            width: 50%;
+            width: 80%;
             @media (max-width: 991px) {
               width: 100%;
             }
-            @media (max-width: 767px) {
-              width: 50%;
+            @media (max-width: 575px) {
+              width: 35%;
             }
           }
         }
