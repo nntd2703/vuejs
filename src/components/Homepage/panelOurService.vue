@@ -1,18 +1,18 @@
 <template>
-  <div class="container panelServies">
-    <header-component headerLabel="Our Service" class="colorSFour pt-3"/>
-    <div class="row align-items-center pb-4">
+  <div class="container panelServies panel">
+    <header-component headerLabel="Our Service" class="colorSFour header pt-5"/>
+    <div class="row align-items-center pt-0 pb-5 pt-5">
       <div class="col-4">
         <img src="../../assets/artboard-1-copy.png" alt="" class="img-fluid"/>
-        <h3>Import</h3>
+        <h3 class="pt-4">Import</h3>
       </div>
       <div class="col-4">
         <img src="../../assets/export.png" alt="" class="img-fluid"/>
-        <h3>Export</h3>
+        <h3 class="pt-4">Export</h3>
       </div>
       <div class="col-4">
         <img src="../../assets/processing.png" alt="" class="img-fluid"/>
-        <h3>Processing</h3>
+        <h3 class="pt-4">Processing</h3>
       </div>
     </div>
   </div>
@@ -36,6 +36,9 @@ export default {
     .col {
       text-align: center;
     }
+  }
+  h3 {
+    font-size: 1.5rem;
   }
 
   @media (max-width: 479px) {

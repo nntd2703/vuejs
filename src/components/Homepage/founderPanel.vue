@@ -17,7 +17,7 @@
             Various versions have evolved over the years, sometimes by accident, sometimes on purpose
             (injected humour and the like).</p>
 
-          <input class="btn" type="submit" value="See More">
+          <input class="btn mt-4" type="submit" value="See More">
         </div>
         <div class="col-12 col-md-6 d-flex justify-content-center"><img src="../../assets/img_founder.png" alt=""></div>
       </div>

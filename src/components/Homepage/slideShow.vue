@@ -366,11 +366,15 @@ export default {
       box-shadow: rgba(255, 255, 255, 0.3) 2px 2px 20px 0px;
     }
     h2 {
-      font-size: 5rem;
+      font-size: 3.8rem !important;
     }
     p {
       font-size: 1rem;
-      font-weight: 400;
+      font-weight: 300;
+    }
+    .btn {
+      padding: .5rem 1rem;
+      margin-top: 1.5rem;
     }
     .carousel-caption {
       bottom: 9rem;
@@ -385,10 +389,6 @@ export default {
       }
       .carousel-caption {
         bottom: 1rem;
-      }
-      .btn {
-        padding: .5rem .5rem;
-        font-size: .5rem
       }
     }
   }

@@ -17,14 +17,31 @@
             <img src="../assets/product2.png"/>
             <p class="pt-2">Lentils</p>
           </div>
+          <div class="col-12 col-md-3 productDetails pb-5">
+            <img src="../assets/product2.png"/>
+            <p class="pt-2">Lentils</p>
+          </div>
+          <div class="col-12 col-md-3 productDetails pb-5">
+            <img src="../assets/product2.png"/>
+            <p class="pt-2">Lentils</p>
+          </div>
+          <div class="col-12 col-md-3 productDetails pb-5">
+            <img src="../assets/product2.png"/>
+            <p class="pt-2">Lentils</p>
+          </div>
+          <div class="col-12 col-md-3 productDetails pb-5">
+            <img src="../assets/product2.png"/>
+            <p class="pt-2">Lentils</p>
+          </div>
+
         </div>
       </div>
     </div>
     <div class="slideProduct pr-5 pl-5">
-      <div class="slider owl-carousel owl-theme">
+      <div class="slider owl-carousel owl-theme owl-product">
         <div class="product">
-          <img src="../assets/product1.png"/>
-          <p class="pt-2">Pulses</p>
+          <img src="../assets/black-chana.jpg"/>
+          <p class="pt-2">Black Chana</p>
         </div>
         <div class="product">
           <img src="../assets/product2.png"/>
@@ -42,17 +59,41 @@
 <script>
 import HomeIndex from '../view/home'
 import PanelAbout from './Homepage/panelAbout'
+
 export default {
   name: 'category2',
   components: { PanelAbout },
   created () {
     this.$emit(`update:layout`, HomeIndex)
+  },
+  mounted () {
+    $('.owl-product').owlCarousel({
+      margin: 40,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      lazyLoad: true,
+      autoPlay: 2500,
+      multipleRow: true,
+      rows: 2,
+      lazyLoadEager: 500,
+      smartSpeed: 1000,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        }
+      }
+    })
   }
 }
 </script>
 
 <style scoped lang="scss">
   .categoryPanel {
+    .owl-carousel .owl-item img {
+      max-width: 380px;
+      max-height: 223px !important;
+    }
     .header {
       font-family: Roboto;
       font-weight: 300;
@@ -64,13 +105,16 @@ export default {
       color: #444444;
       font-size: 3rem;
     }
+
     .slideProduct {
       display: none;
     }
+
     @media (max-width: 767px) {
       .slideProduct {
         display: block;
-        p{
+
+        p {
           font-size: 1.5rem;
         }
       }

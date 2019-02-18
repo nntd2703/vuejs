@@ -4,7 +4,7 @@
     <div class="container-fluid pl-5 pr-5">
       <div class="row pl-md-5 pr-md-5">
         <h2 class="titleProduct headerProduct text-center text-uppercase w-100 p-md-4 p-2">out product</h2>
-        <h4 class="subtitleProduct headerProduct text-center text-uppercase w-100 pt-2">export</h4>
+        <h4 class="subtitleProduct headerProduct text-center text-uppercase w-100 pb-2">export</h4>
         <div class="carousel-wrap pl-md-5 pr-md-5 col-12">
           <div class="owl-carousel owl-theme">
             <div class="item">
@@ -58,7 +58,7 @@
             </div>
           </div>
         </div>
-        <h4 class="subtitleProduct headerProduct text-center text-uppercase w-100 pt-md-4 pt-2">import</h4>
+        <h4 class="subtitleProduct headerProduct text-center text-uppercase w-100 pt-md-4 pb-2">import</h4>
         <div class="carousel-wrap pl-md-5 pr-md-5 col-12 pb-md-4 pb-2">
           <div class="owl-carousel owl-theme">
             <div class="item">
@@ -132,12 +132,13 @@ export default {
   },
   mounted () {
     $('.owl-carousel').owlCarousel({
-      margin: 50,
+      margin: 40,
       nav: true,
       navText: ['<div class=\'nav-btn prev-slide\'></div>', '<div class=\'nav-btn next-slide\'></div>'],
       autoplay: true,
       autoplayTimeout: 4000,
       lazyLoad: true,
+      dots: false,
       autoPlay: 2500,
       lazyLoadEager: 1000,
       smartSpeed: 1000,
@@ -145,7 +146,10 @@ export default {
         0: {
           items: 1
         },
-        991: {
+        677: {
+          items: 2
+        },
+        768: {
           items: 4
         }
       }
@@ -159,7 +163,7 @@ export default {
 
     .headerProduct {
       color: #444444;
-      font-weight: 400;
+      font-weight: 300;
     }
 
     .carousel-wrap {

@@ -22,12 +22,12 @@
                   Our Product
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Product 1</a></li>
-                  <li><a class="dropdown-item" href="#">Product 2</a></li>
+                  <li><router-link to="/category1"><a class="dropdown-item" href="category1.html">Category 1</a></router-link></li>
+                  <li><router-link to="/category2"><a class="dropdown-item" href="category2.html">Category 2</a></router-link></li>
                   <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Product
                     3</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Product 3.1</a></li>
+                      <li><router-link to="/ourproduct"><a class="dropdown-item" href="our-product.html">Our Product</a></router-link></li>
                       <li><a class="dropdown-item" href="#">Product 3.2</a></li>
                       <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
                                                       href="#">Product 3.3</a>
@@ -53,11 +53,11 @@
                 <router-link to="/about"><a class="nav-link" href="about.html">About Us</a></router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/about"><a class="nav-link" href="contact.html">Contact</a></router-link>
+                <router-link to="/contactus"><a class="nav-link" href="contact.html">Contact</a></router-link>
               </li>
 
               <li class="nav-item">
-                <router-link to="/about"><a class="nav-link" href="#">Meeting Founder</a></router-link>
+                <router-link to="/pdp"><a class="nav-link" href="pdp.html">Meeting Founder</a></router-link>
               </li>
             </ul>
           </div>

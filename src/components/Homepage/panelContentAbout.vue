@@ -11,7 +11,7 @@
                 content of a
                 page when looking at its layout. The point of using Lorem Ipsum is that it has a
                 more-or-less normal distribution of letters. as opposed to using.</p>
-              <input class="btn" type="submit" value="See More" id="btnTest">
+              <input class="btn mt-4" type="submit" value="See More" id="btnTest">
             </div>
           </div>
         </section>

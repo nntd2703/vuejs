@@ -2,7 +2,7 @@
   <div class="productCategory container-fluid  p-4">
     <div class="headerCategory flex-column p-md-2">
       <img src="../../assets/categoryImg.svg" alt="">
-      <span><h2>Product Categories</h2></span>
+      <h2>Product Categories</h2>
     </div>
     <div class="contentCategory d-flex">
       <ul class="list-group col-md-twenty productDetails p-2">
@@ -139,7 +139,7 @@ export default {
   .productCategory {
     .headerCategory {
       img {
-        width: 80px;
+        width: 7%;
       }
       h2 {
         padding-left: 15px;
@@ -147,6 +147,7 @@ export default {
         text-transform: uppercase;
         color: #444444;
         font-weight: 500;
+        font-size: 1.9rem !important;
       }
       @media (max-width: 991px) {
         img {
@@ -161,12 +162,17 @@ export default {
         img {
           width: 70px;
         }
-        h2 {
-          font-size: 1.5rem;
-        }
       }
     }
     .contentCategory {
+      @media (min-width: 785px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: space-between;
+      }
       .productDetails {
         border-top: 0 none;
         .active {

@@ -5,49 +5,41 @@
       <div class="slideShowProduct">
         <div class="carousel-wrap pb-2">
           <div class="owl-carousel owl-theme owl-product">
-            <div class="item text-center">
-              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
-              <h3 class="position-absolute text-white h3CenterDiv">Agricultural
-                Chemical Products </h3>
+            <div class="item text-center ">
+              <img class="position-relative" src="../../assets/black-chana.jpg" alt="">
+              <h3 class="position-absolute text-white h3CenterDiv">Black Chana</h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
-              <h3 class="position-absolute text-white h3CenterDiv">Agricultural
-                Chemical Products </h3>
+              <img class="position-relative" src="../../assets/cashew-kernels.jpg" alt="">
+              <h3 class="position-absolute text-white h3CenterDiv">Cashwe Kernels</h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
-              <h3 class="position-absolute text-white h3CenterDiv">Agricultural
-                Chemical Products </h3>
+              <img class="position-relative" src="../../assets/cassia.jpg" alt="">
+              <h3 class="position-absolute text-white h3CenterDiv">Cassia</h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
-              <h3 class="position-absolute text-white h3CenterDiv">Agricultural
-                Chemical Products </h3>
+              <img class="position-relative" src="../../assets/castor.jpg" alt="">
+              <h3 class="position-absolute text-white h3CenterDiv">Castor</h3>
             </div>
           </div>
         </div>
         <div class="carousel-wrap pb-5 d-md-block d-none">
           <div class="owl-carousel owl-theme owl-product">
             <div class="item text-center">
-              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
-              <h3 class="position-absolute text-white h3CenterDiv">Agricultural
-                Chemical Products </h3>
+              <img class="position-relative" src="../../assets/cinamon.jpg" alt="">
+              <h3 class="position-absolute text-white h3CenterDiv">Cinamon</h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
-              <h3 class="position-absolute text-white h3CenterDiv">Agricultural
-                Chemical Products </h3>
+              <img class="position-relative" src="../../assets/cocoa-powder.jpg" alt="">
+              <h3 class="position-absolute text-white h3CenterDiv">Cocoa Powder</h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
-              <h3 class="position-absolute text-white h3CenterDiv">Agricultural
-                Chemical Products </h3>
+              <img class="position-relative" src="../../assets/corn-starch.jpeg" alt="">
+              <h3 class="position-absolute text-white h3CenterDiv">Corn Starch</h3>
             </div>
             <div class="item">
-              <img class="position-relative" src="../../assets/group-19-copy.png" alt="">
-              <h3 class="position-absolute text-white h3CenterDiv">Agricultural
-                Chemical Products </h3>
+              <img class="position-relative" src="../../assets/cotton-seed-oils.jpg" alt="">
+              <h3 class="position-absolute text-white h3CenterDiv">Cotton Seed Oils </h3>
             </div>
           </div>
         </div>
@@ -96,6 +88,7 @@ export default {
 <style scoped lang="scss">
   .panelExpertise {
     background-image: url("../../assets/backgroundProduct.jpg");
+
     .h3CenterDiv {
       right: 16%;
       width: 65%;
@@ -110,6 +103,13 @@ export default {
       @media (max-width: 768px) {
         font-size: 2rem;
       }
+    }
+    .owl-carousel .owl-stage {
+       display: flex;
+     }
+    .owl-carousel .owl-item img {
+      max-width: 380px;
+      max-height: 223px !important;
     }
   }
 </style>

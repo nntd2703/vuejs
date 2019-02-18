@@ -7,6 +7,7 @@ const Cate1 = () => import(`../components/category1.vue`)
 const Cate2 = () => import(`../components/category2.vue`)
 const Contact = () => import(`../components/contact.vue`)
 const ourProduct = () => import(`../components/ourproduct.vue`)
+const PDP = () => import(`../components/pdp.vue`)
 
 Vue.use(Router)
 
@@ -39,6 +40,10 @@ export default new Router({
       path: '/ourproduct',
       name: 'Our Product',
       component: ourProduct
+    }, {
+      path: '/pdp',
+      name: 'PDP',
+      component: PDP
     }
   ]
 })

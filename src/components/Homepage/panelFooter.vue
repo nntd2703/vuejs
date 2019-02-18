@@ -1,13 +1,13 @@
 <template>
   <footer>
     <div class="footerContent container">
-      <div class="row">
-        <div class="col-6 col-lg-4 ml-auto map">
+      <div class="row childFooter">
+        <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10949.142965462774!2d106.6890327442656!3d10.772557902286012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3e8eddf565%3A0x2ab6e5fe92c2e5d7!2sNew+World+Saigon+Hotel!5e0!3m2!1sen!2s!4v1543255808288"
             style="border:0" allowfullscreen width="100%" height="auto"></iframe>
         </div>
-        <div class="col-6 col-lg-8 h-auto detailContent text-center text-md-left">
+        <div class="h-auto detailContent text-center">
           <div class="logoicon jumbotron">
             <div class="logo">
               <img src="../../assets/artboard-2-copy.png">
@@ -62,11 +62,21 @@ export default {
     .footerContent {
       padding: 1rem;
       margin: 0 auto;
-      .map {
-        padding-right: 0;
+
+      .childFooter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: flex-start;
+        @media (max-width: 479px) {
+          .map, .detailContent {
+            width: 50%;
+          }
+        }
       }
       .detailContent {
-        padding: 0 !important;
         .jumbotron {
           padding: 1rem;
           margin: 0;
@@ -92,6 +102,12 @@ export default {
           ul {
             margin-top: 10px;
             padding: 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: flex-start;
             li {
               padding-left: 10px;
               p {

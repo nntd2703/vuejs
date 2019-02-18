@@ -3,8 +3,8 @@
       <panel-about/>
       <div class="contentAboutUs">
         <div class="aboutUs">
-          <div class="col-12 d-flex justify-content-center p-3 p-md-5">
-            <h1>ABOUT US</h1>
+          <div class="col-12 d-flex justify-content-center p-3 pt-md-4">
+            <h1 class="pt-md-3">ABOUT US</h1>
           </div>
           <div class="description text-center"><p>Lorem Ipsum has been the industry's standard dummy text
             ever since the
@@ -59,7 +59,6 @@ export default {
           margin-right: auto;
           margin-left: auto;
           width: 60%;
-          padding-top: 2rem;
           p {
             font-size: 1rem;
             line-height: 1.75;
@@ -73,7 +72,7 @@ export default {
           }
         }
         .contentDetails {
-          padding: 3rem 0;
+          padding-top: 3rem;
           p {
             font-family: Roboto;
             font-size: 1.5rem;
